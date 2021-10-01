@@ -274,5 +274,5 @@ def evaluate(opt):
 
 
 if __name__ == "__main__":
-    options = MonodepthOptions()
+    options = Options()
     evaluate(options.parse())

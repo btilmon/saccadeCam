@@ -17,7 +17,7 @@ import torchvision.utils as vision_utils
 
 from layers import disp_to_depth, BackprojectDepth, Project3D
 from utils import readlines
-from options import MonodepthOptions
+from options import Options
 import datasets
 import networks
 from CannyEdgePytorch import net_canny
@@ -1010,7 +1010,7 @@ def evaluate(opt):
 
 if __name__ == "__main__":
 
-    options = MonodepthOptions()
+    options = Options()
     options = options.parse()
     
     #options.epoch_to_load = str(i)
