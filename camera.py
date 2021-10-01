@@ -51,7 +51,6 @@ class Camera():
 
     def Defocused(self):
         """Set Defocused camera where Saccade+WAC = Defocused (after overlay!!!)"""
-        #self.defocused_px = self.reshape(self.wac_px[0]*self.wac_px[1] + self.saccade_px[0]*self.saccade_px[1])
         self.defocused_px = np.sqrt(self.defocused_scale) * self.native_res
         self.defocused_ang = self.defocused_px / self.fov_mm
 
@@ -60,13 +59,6 @@ class Camera():
         """Set wide angle camera parameters"""
 
         # conceptually:  (1-fovea_percent*num_fovea)*wac + saccade = periphery_scale * native_res
-        '''
-        sensor_px = self.reshape(((self.periphery_scale*self.native_res[0]*self.native_res[1]) - (self.saccade_px[0]*self.saccade_px[1])) / (1-(self.fovea_percent*self.num_fovea)))
-        ang = sensor_px / self.fov_mm
-        self.wac_fov_mm = self.reshape(self.fov_mm[0]*self.fov_mm[1] - self.saccade_fov[0]*self.saccade_fov[1])
-        self.wac_px = ang * self.wac_fov_mm
-        self.wac_ang = self.wac_px / self.fov_mm
-        '''
         self.wac_px = np.sqrt(self.wac_scale) * self.defocused_px
         self.wac_ang = self.wac_px / self.fov_mm
 
@@ -140,14 +132,6 @@ def get_resolutions(args):
     px = px.astype(int)
 
     ratio = (native[0]*native[1]) / (px[0]*px[1])
-    #saccade_total = cam.reshape(cam.saccade_px[0] * cam.saccade_px[1]).astype(int)
-    '''
-    if args.num_fovea is not None:
-        fovea_px = cam.reshape(saccade_total * args.num_fovea)
-    else:
-        fovea_px = 0
-    '''
-    #print('camera',fovea_px[0]*fovea_px[1]*args.num_fovea)
     
     # ensure even native res
     h, w = make_even(h, w)
@@ -179,14 +163,8 @@ def process(image, args):
     focused = np.copy(image)
 
     # lower angular res
-    #print('before',image.shape)
     image = cv2.resize(image, (px[1], px[0]), interpolation=interp_shrink)
-    #print('after', image.shape, '\n')
     image = cv2.resize(image, (w, h), interpolation=interp_grow)
-    # resize depth
-    #depth = cv2.GaussianBlur(depth, (3,3), 0)
-    #depth = cv2.resize(depth, (w//2, h//2), interpolation=interp_shrink)
-    #depth = depth[:,:,np.newaxis]
     return image
 
 def unit_test():
