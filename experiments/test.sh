@@ -47,7 +47,7 @@
 # BANDWIDTH (35 target, 30.31 WAC)
 ###################
 # full res
-python ../test_conventional.py --load_weights_folder ~/tmp/focused/models/weights_19/ --eval_stereo --fovea 2
+#python ../test_conventional.py --load_weights_folder ~/tmp/focused/models/weights_19/ --eval_stereo --fovea 2
 
 # target
 #python ../test_conventional.py --load_weights_folder ~/tmp/defocused_0.25_0.0/models/weights_19/ --eval_stereo --fovea 1 --defocused_scale 0.25 --wac_scale 0.0  

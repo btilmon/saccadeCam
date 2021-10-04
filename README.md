@@ -52,9 +52,12 @@ You can skip this step and include the `--png` flag, but the results will be sli
 
 This code was developed on Ubuntu 16.04 with a NVIDIA GTX 1080 Ti.
 
-```shell
-conda env create -f environment.yml
-```
+* opencv-python==4.5.1.48
+* protobuf==3.14.0
+* tensorboardx==1.4
+* torch==1.7.1
+* torchvision==0.8.2
+
 
 ## Training
 
@@ -106,6 +109,6 @@ As a guide, the below table explains which epochs of models were used for our re
 
 ## Copyright and License Statement
 
-The network encoder and decoder architectures and reprojection layers were adapted from [monodepth2](https://github.com/nianticlabs/monodepth2). We reimplement `layers.py`, `resnet_encoder.py`, and 'depth_decoder.py' based on their paper to avoid infringing on their license. Our contributions aim for improving existing self supervised depth techniques, such as monodepth2, with adaptive resolution placement. 
+The network encoder and decoder architectures and reprojection layers were adapted from [monodepth2](https://github.com/nianticlabs/monodepth2). We reimplement `layers.py`, `resnet_encoder.py`, and `depth_decoder.py` based on their paper to avoid infringing on their license. Our contributions aim for improving existing self supervised depth techniques, such as monodepth2, with adaptive resolution placement. 
 
 
