@@ -12,17 +12,15 @@ This is the PyTorch implementation for:
 If you find our work useful in your research please consider citing our paper:
 
 ```
-@article{saccadeCam,
-	title = {SaccadeCam: Adaptive Visual Attention for Monocular Depth Sensing},
-	author = {Brevin Tilmon and
-	       	 Sanjeev J. Koppal},
-	booktitle = {The International Conference on Computer Vision (ICCV)},
-	month = {October},
-	year = {2021}
+@misc{tilmon2021saccadecam,
+title={SaccadeCam: Adaptive Visual Attention for Monocular Depth Sensing},
+author={Brevin Tilmon and Sanjeev J. Koppal},
+year={2021},
+eprint={2103.12981},
+archivePrefix={arXiv},
+primaryClass={cs.CV}
 }
 ```
-
-
 
 
 ## Data
