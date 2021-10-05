@@ -6,7 +6,7 @@ This is the PyTorch implementation for:
 >
 > [Brevin Tilmon](https://btilmon.github.io/) and [Sanjeev Koppal](http://focus.ece.ufl.edu/people/)
 >
-> [ICCV 2021 (arXiv pdf)](https://arxiv.org/abs/2103.12981)
+> [ICCV 2021 (arXiv pdf)](https://arxiv.org/abs/2103.12981) | [Webpage](https://focus.ece.ufl.edu/saccadecam/)
 
 
 If you find our work useful in your research please consider citing our paper:
