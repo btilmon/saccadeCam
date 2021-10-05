@@ -23,7 +23,7 @@ primaryClass={cs.CV}
 ```
 
 <p align="center">
-    <img src="https://btilmon.github.io/img/saccadecam_teaser.png">
+    <img src="https://btilmon.github.io/img/saccade_teaser.png">
 </p>
 
 ## Data
