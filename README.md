@@ -22,7 +22,9 @@ primaryClass={cs.CV}
 }
 ```
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VvRwwrMy1r0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p align="center">
+    <img src="https://btilmon.github.io/img/saccadecam_teaser.png">
+</p>
 
 ## Data
 
