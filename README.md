@@ -83,7 +83,7 @@ CUDA_VISIBLE_DEVICES=0 python ../train_main.py \
 		    --disable_automasking --weight_regions --fovea_weight 0.15 
 ```
 
-`--oracleC` means we train the depth network and not the attention network. See `experiments/deformable_train.sh` to train attention networks.
+`--oracleC` means we train the depth network and not the attention network. See `experiments/train.sh` for more training configurations.
 
 `--fovea` = 0 for loading WAC resolutions, 1 for loading target resolutions, and 2 for full resolution.
 

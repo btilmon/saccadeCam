@@ -74,6 +74,8 @@
 ############################
 # repeat results from paper
 ###########################
+
+# train depth --oracleC
 CUDA_VISIBLE_DEVICES=0 python ../train_main.py \
 		    --model_name attention/RR_depth_ \
 		    --use_stereo --frame_ids 0 --split eigen_full --fovea 0 --num_epochs 20 \
@@ -81,12 +83,7 @@ CUDA_VISIBLE_DEVICES=0 python ../train_main.py \
 		    --defocused_scale 0.25 --wac_scale 0.75  \
 		    --disable_automasking --weight_regions --fovea_weight 0.15 
 
-
-
-
-#################
-# train attention
-#################
+# train attention --deformable
 CUDA_VISIBLE_DEVICES=0 python ../train_main.py \
 		    --model_name attention/RR_deformable_ \
 		    --use_stereo --frame_ids 0 --split eigen_full --fovea 0 --num_epochs 10 \
