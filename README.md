@@ -6,7 +6,7 @@ This is the PyTorch implementation for:
 >
 > [Brevin Tilmon](https://btilmon.github.io/) and [Sanjeev Koppal](http://focus.ece.ufl.edu/people/)
 >
-> [Paper (ICCV 2021)](https://arxiv.org/abs/2103.12981) | [Webpage](https://focus.ece.ufl.edu/saccadecam/)
+> [Paper (ICCV 2021)](https://openaccess.thecvf.com/content/ICCV2021/html/Tilmon_SaccadeCam_Adaptive_Visual_Attention_for_Monocular_Depth_Sensing_ICCV_2021_paper.html) | [Webpage](https://focus.ece.ufl.edu/saccadecam/)
 
 
 If you find our work useful in your research please consider citing our paper:
